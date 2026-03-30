@@ -1,0 +1,1260 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D539FB6256C60B800764C1B /* PixcenMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D539FB5256C60B800764C1B /* PixcenMainViewController.swift */; };
+		4D539FBA256C60F600764C1B /* AppDelegate+Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D539FB9256C60F600764C1B /* AppDelegate+Menu.swift */; };
+		4D539FC5256C613800764C1B /* PixcenFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D539FC3256C613800764C1B /* PixcenFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D539FC8256C613800764C1B /* PixcenFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D539FC1256C613700764C1B /* PixcenFoundation.framework */; };
+		4D539FC9256C613800764C1B /* PixcenFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D539FC1256C613700764C1B /* PixcenFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4D539FD7256C61D300764C1B /* C64InterfaceLowlevel.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 4D539FD3256C61D300764C1B /* C64InterfaceLowlevel.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D539FD8256C61D300764C1B /* C64Col.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 4D539FD4256C61D300764C1B /* C64Col.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D539FD9256C61D300764C1B /* C64InterfaceLowlevel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D539FD5256C61D300764C1B /* C64InterfaceLowlevel.mm */; };
+		4D539FDA256C61D300764C1B /* C64Col.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D539FD6256C61D300764C1B /* C64Col.mm */; };
+		4D539FEB256C643B00764C1B /* C64Col.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D539FE9256C643B00764C1B /* C64Col.h */; };
+		4D539FEC256C643B00764C1B /* C64Col.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D539FEA256C643B00764C1B /* C64Col.cpp */; };
+		4D539FF1256C64CA00764C1B /* libpixcen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D539FEF256C64CA00764C1B /* libpixcen.cpp */; };
+		4D539FF2256C64CA00764C1B /* libpixcen.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D539FF0256C64CA00764C1B /* libpixcen.h */; };
+		4D539FF7256C652000764C1B /* platform.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D539FF5256C652000764C1B /* platform.h */; };
+		4D539FF8256C652000764C1B /* platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D539FF6256C652000764C1B /* platform.cpp */; };
+		4D53A00E256C6BC100764C1B /* liblibpixcen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D539FE2256C62A000764C1B /* liblibpixcen.a */; };
+		4D53A012256C6C5100764C1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D53A011256C6C5100764C1B /* Foundation.framework */; };
+		4D53A014256C6C6100764C1B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D53A013256C6C6100764C1B /* Cocoa.framework */; };
+		4D53A016256C6C6700764C1B /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D53A015256C6C6700764C1B /* AppKit.framework */; };
+		4D53A01D256C6D2600764C1B /* libpixcen.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D539FF0256C64CA00764C1B /* libpixcen.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4D53A023256C6DB900764C1B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4D53A022256C6DB900764C1B /* Credits.rtf */; };
+		4D53A028256C6EAB00764C1B /* PCPixelCanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D53A027256C6EAB00764C1B /* PCPixelCanvasViewController.swift */; };
+		4D53A02D256C6F2000764C1B /* PCPixelCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D53A02C256C6F2000764C1B /* PCPixelCanvasView.swift */; };
+		4D53A035256C70BC00764C1B /* PCRemapColourDlgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D53A032256C70BC00764C1B /* PCRemapColourDlgViewController.swift */; };
+		4D53A036256C70BC00764C1B /* PCAddressDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D53A033256C70BC00764C1B /* PCAddressDialogViewController.swift */; };
+		4D53A037256C70BC00764C1B /* PCCreateNewDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D53A034256C70BC00764C1B /* PCCreateNewDialogViewController.swift */; };
+		4D53A04A256C71B200764C1B /* PCC64PaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D53A048256C71B200764C1B /* PCC64PaletteView.swift */; };
+		4D53A04B256C71B200764C1B /* PCColorCtrlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D53A049256C71B200764C1B /* PCColorCtrlView.swift */; };
+		4D53A04F256C720D00764C1B /* PCToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D53A04E256C720D00764C1B /* PCToolView.swift */; };
+		4D63EC0E25BF3A3300CE5366 /* FileHandleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63EC0D25BF3A3300CE5366 /* FileHandleExtensions.swift */; };
+		4D63EC1225BF3A5800CE5366 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63EC1125BF3A5800CE5366 /* DataExtensions.swift */; };
+		4D6BD0562607F8F70084FFF2 /* PixelCanvas.metal in Sources */ = {isa = PBXBuildFile; fileRef = 4D6BD0552607F8F70084FFF2 /* PixelCanvas.metal */; };
+		4D6BD05A2607FAE50084FFF2 /* PixelCanvasRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6BD0592607FAE50084FFF2 /* PixelCanvasRenderer.swift */; };
+		4D7D04FB2F7541B300F10BD2 /* pixcenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7D04F92F7541B300F10BD2 /* pixcenTests.swift */; };
+		4D7D04FD2F7541F600F10BD2 /* gpxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7D04FC2F7541E900F10BD2 /* gpxTests.swift */; };
+		4D7D04FF2F75425700F10BD2 /* koalaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7D04FE2F75425400F10BD2 /* koalaTests.swift */; };
+		4D7D05012F754A1A00F10BD2 /* formatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7D05002F754A1A00F10BD2 /* formatTests.swift */; };
+		4D88BD15256C8035003C4F9A /* NSImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BD13256C8035003C4F9A /* NSImageExtensions.swift */; };
+		4D88BD16256C8035003C4F9A /* Concurrent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BD14256C8035003C4F9A /* Concurrent.swift */; };
+		4D88BD23256C821D003C4F9A /* PCBitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BD1B256C821C003C4F9A /* PCBitmap.swift */; };
+		4D88BD24256C821D003C4F9A /* PCMCBitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BD1C256C821C003C4F9A /* PCMCBitmap.swift */; };
+		4D88BD25256C821D003C4F9A /* PCSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BD1D256C821C003C4F9A /* PCSprite.swift */; };
+		4D88BD26256C821D003C4F9A /* PCSFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BD1E256C821C003C4F9A /* PCSFont.swift */; };
+		4D88BD27256C821D003C4F9A /* PCMCSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BD1F256C821D003C4F9A /* PCMCSprite.swift */; };
+		4D88BD28256C821D003C4F9A /* PCUnrestricted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BD20256C821D003C4F9A /* PCUnrestricted.swift */; };
+		4D88BD29256C821D003C4F9A /* PCMCFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BD21256C821D003C4F9A /* PCMCFont.swift */; };
+		4D88BD2A256C821D003C4F9A /* PCCommonFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BD22256C821D003C4F9A /* PCCommonFont.swift */; };
+		4D88BD30256C8253003C4F9A /* CellInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BD2D256C8252003C4F9A /* CellInfo.swift */; };
+		4D88BD31256C8253003C4F9A /* PCImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BD2E256C8253003C4F9A /* PCImage.swift */; };
+		4D88BD32256C8253003C4F9A /* SaveFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BD2F256C8253003C4F9A /* SaveFormat.swift */; };
+		4D88BD3A256C829B003C4F9A /* PCC64Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BD39256C829B003C4F9A /* PCC64Interface.swift */; };
+		4D88BD46256D1A4F003C4F9A /* C64Interface.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D88BD44256D1A4F003C4F9A /* C64Interface.h */; };
+		4D88BD51256D1B1A003C4F9A /* C64Interface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BD50256D1B1A003C4F9A /* C64Interface.cpp */; };
+		4D88BD55256D1CCF003C4F9A /* narray.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D88BD54256D1CCF003C4F9A /* narray.h */; };
+		4D88BD5A256D1CE5003C4F9A /* miniz.c in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BD59256D1CE5003C4F9A /* miniz.c */; };
+		4D88BD61256D1D9F003C4F9A /* nmemfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D88BD5E256D1D9F003C4F9A /* nmemfile.h */; };
+		4D88BD62256D1D9F003C4F9A /* nstr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D88BD5F256D1D9F003C4F9A /* nstr.h */; };
+		4D88BD63256D1D9F003C4F9A /* nstream.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D88BD60256D1D9F003C4F9A /* nstream.h */; };
+		4D88BD6B256D231E003C4F9A /* autoptr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D88BD6A256D231E003C4F9A /* autoptr.h */; };
+		4D88BD70256D2346003C4F9A /* b2wrap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BD6E256D2346003C4F9A /* b2wrap.cpp */; };
+		4D88BD71256D2346003C4F9A /* b2wrap.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D88BD6F256D2346003C4F9A /* b2wrap.h */; };
+		4D88BD7D256D2395003C4F9A /* cruncher.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D88BD75256D2394003C4F9A /* cruncher.h */; };
+		4D88BD7E256D2395003C4F9A /* bb.c in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BD76256D2394003C4F9A /* bb.c */; };
+		4D88BD80256D2395003C4F9A /* file.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D88BD78256D2394003C4F9A /* file.h */; };
+		4D88BD81256D2395003C4F9A /* bb.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D88BD79256D2394003C4F9A /* bb.h */; };
+		4D88BD82256D2395003C4F9A /* cruncher.c in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BD7A256D2394003C4F9A /* cruncher.c */; };
+		4D88BD83256D2395003C4F9A /* file.c in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BD7B256D2394003C4F9A /* file.c */; };
+		4D88BD84256D2395003C4F9A /* Decruncher.inc in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BD7C256D2394003C4F9A /* Decruncher.inc */; };
+		4D88BD97256D33E8003C4F9A /* ImageFast.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D88BD96256D33E8003C4F9A /* ImageFast.h */; };
+		4D88BD9D256D35F7003C4F9A /* threadpool.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D88BD9C256D35F7003C4F9A /* threadpool.h */; };
+		4D88BDA0256D3605003C4F9A /* CImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BD8A256D32CE003C4F9A /* CImage.mm */; };
+		4D88BDD4256D5ECA003C4F9A /* platform.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D539FF5256C652000764C1B /* platform.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4D88BDE6256D820E003C4F9A /* threadpool.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D88BD9C256D35F7003C4F9A /* threadpool.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4D88BDF8256D8632003C4F9A /* MCBitmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BDF7256D8632003C4F9A /* MCBitmap.cpp */; };
+		4D88BE04256D8F4B003C4F9A /* Unrestricted.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BE03256D8F4B003C4F9A /* Unrestricted.cpp */; };
+		4D88BE08256D8F62003C4F9A /* Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BE07256D8F62003C4F9A /* Sprite.cpp */; };
+		4D88BE0D256D8FCB003C4F9A /* Romfont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BE0B256D8FCB003C4F9A /* Romfont.cpp */; };
+		4D88BE0E256D8FCB003C4F9A /* Romfont.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D88BE0C256D8FCB003C4F9A /* Romfont.h */; };
+		4D88BE12256D91EA003C4F9A /* Bitmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BE11256D91EA003C4F9A /* Bitmap.cpp */; };
+		4D88BE16256D931D003C4F9A /* Font.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D88BE15256D931D003C4F9A /* Font.cpp */; };
+		4DCA3F2A256C5E7F00280A55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCA3F29256C5E7F00280A55 /* AppDelegate.swift */; };
+		4DCA3F2E256C5E8000280A55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DCA3F2D256C5E8000280A55 /* Assets.xcassets */; };
+		4DCA3F31256C5E8000280A55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DCA3F2F256C5E8000280A55 /* Main.storyboard */; };
+		4DE12EE925C35BCA00771357 /* C64Col.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE12EE825C35BCA00771357 /* C64Col.swift */; };
+		AABB0002000000000000CC01 /* stdafx.h in Headers */ = {isa = PBXBuildFile; fileRef = AABB0001000000000000CC01 /* stdafx.h */; };
+		AABB0005000000000000CC01 /* PCC64PalleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB0003000000000000CC01 /* PCC64PalleteViewController.swift */; };
+		AABB0006000000000000CC01 /* PCColorCtrlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB0004000000000000CC01 /* PCColorCtrlViewController.swift */; };
+		AABB1011000000000000CC01 /* PCPixelCanvasView+Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB1001000000000000CC01 /* PCPixelCanvasView+Gestures.swift */; };
+		AABB1012000000000000CC01 /* PCPixelCanvasView+MouseEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB1002000000000000CC01 /* PCPixelCanvasView+MouseEvents.swift */; };
+		AABB1013000000000000CC01 /* PCPixelCanvasView+Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB1003000000000000CC01 /* PCPixelCanvasView+Drawing.swift */; };
+		AABB1014000000000000CC01 /* PCPixelCanvasView+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB1004000000000000CC01 /* PCPixelCanvasView+Keyboard.swift */; };
+		AABB1015000000000000CC01 /* PCScrollIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB1005000000000000CC01 /* PCScrollIndicator.swift */; };
+		AABB2011000000000000CC01 /* PCPreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB2001000000000000CC01 /* PCPreferencesWindowController.swift */; };
+		AABB3011000000000000CC01 /* ZlibCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB3001000000000000CC01 /* ZlibCompression.swift */; };
+		AABB4012000000000000CC01 /* PCByteBoozer.mm in Sources */ = {isa = PBXBuildFile; fileRef = AABB4002000000000000CC01 /* PCByteBoozer.mm */; };
+		AABB4013000000000000CC01 /* ByteBoozer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB4003000000000000CC01 /* ByteBoozer.swift */; };
+		AABB4014000000000000CC01 /* PCByteBoozer.h in Headers */ = {isa = PBXBuildFile; fileRef = AABB4001000000000000CC01 /* PCByteBoozer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AABB5012000000000000CC01 /* PCC64Codecs.mm in Sources */ = {isa = PBXBuildFile; fileRef = AABB5002000000000000CC01 /* PCC64Codecs.mm */; };
+		AABB5013000000000000CC01 /* C64Codecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB5003000000000000CC01 /* C64Codecs.swift */; };
+		AABB5014000000000000CC01 /* PCC64Codecs.h in Headers */ = {isa = PBXBuildFile; fileRef = AABB5001000000000000CC01 /* PCC64Codecs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AABB6011000000000000CC01 /* ImageImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB6001000000000000CC01 /* ImageImporter.swift */; };
+		AABB7011000000000000CC01 /* PCPreviewWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB7001000000000000CC01 /* PCPreviewWindow.swift */; };
+		AAC01012000000000000CC01 /* PCRomFont.mm in Sources */ = {isa = PBXBuildFile; fileRef = AAC01002000000000000CC01 /* PCRomFont.mm */; };
+		AAC01014000000000000CC01 /* PCRomFont.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC01001000000000000CC01 /* PCRomFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D539FC6256C613800764C1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DCA3F1E256C5E7F00280A55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D539FC0256C613700764C1B;
+			remoteInfo = PixcenFoundation;
+		};
+		4D53A00B256C6BBA00764C1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DCA3F1E256C5E7F00280A55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D539FE1256C62A000764C1B;
+			remoteInfo = libpixcen;
+		};
+		4D7D04F42F7541A200F10BD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DCA3F1E256C5E7F00280A55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DCA3F25256C5E7F00280A55;
+			remoteInfo = pixcen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4D539FCD256C613800764C1B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4D539FC9256C613800764C1B /* PixcenFoundation.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4D539FB5256C60B800764C1B /* PixcenMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixcenMainViewController.swift; sourceTree = "<group>"; };
+		4D539FB9256C60F600764C1B /* AppDelegate+Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Menu.swift"; sourceTree = "<group>"; };
+		4D539FC1256C613700764C1B /* PixcenFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PixcenFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D539FC3256C613800764C1B /* PixcenFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PixcenFoundation.h; sourceTree = "<group>"; };
+		4D539FC4256C613800764C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D539FD3256C61D300764C1B /* C64InterfaceLowlevel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = C64InterfaceLowlevel.hpp; sourceTree = "<group>"; };
+		4D539FD4256C61D300764C1B /* C64Col.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = C64Col.hpp; sourceTree = "<group>"; };
+		4D539FD5256C61D300764C1B /* C64InterfaceLowlevel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = C64InterfaceLowlevel.mm; sourceTree = "<group>"; };
+		4D539FD6256C61D300764C1B /* C64Col.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = C64Col.mm; sourceTree = "<group>"; };
+		4D539FDC256C61DF00764C1B /* PixcenFoundation.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = PixcenFoundation.modulemap; sourceTree = "<group>"; };
+		4D539FE2256C62A000764C1B /* liblibpixcen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibpixcen.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D539FE9256C643B00764C1B /* C64Col.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C64Col.h; sourceTree = "<group>"; };
+		4D539FEA256C643B00764C1B /* C64Col.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = C64Col.cpp; sourceTree = "<group>"; };
+		4D539FEF256C64CA00764C1B /* libpixcen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = libpixcen.cpp; sourceTree = "<group>"; };
+		4D539FF0256C64CA00764C1B /* libpixcen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libpixcen.h; sourceTree = "<group>"; };
+		4D539FF5256C652000764C1B /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform.h; sourceTree = "<group>"; };
+		4D539FF6256C652000764C1B /* platform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = platform.cpp; sourceTree = "<group>"; };
+		4D53A011256C6C5100764C1B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4D53A013256C6C6100764C1B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4D53A015256C6C6700764C1B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4D53A022256C6DB900764C1B /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		4D53A027256C6EAB00764C1B /* PCPixelCanvasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCPixelCanvasViewController.swift; sourceTree = "<group>"; };
+		4D53A02C256C6F2000764C1B /* PCPixelCanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCPixelCanvasView.swift; sourceTree = "<group>"; };
+		4D53A032256C70BC00764C1B /* PCRemapColourDlgViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCRemapColourDlgViewController.swift; sourceTree = "<group>"; };
+		4D53A033256C70BC00764C1B /* PCAddressDialogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCAddressDialogViewController.swift; sourceTree = "<group>"; };
+		4D53A034256C70BC00764C1B /* PCCreateNewDialogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCCreateNewDialogViewController.swift; sourceTree = "<group>"; };
+		4D53A048256C71B200764C1B /* PCC64PaletteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCC64PaletteView.swift; sourceTree = "<group>"; };
+		4D53A049256C71B200764C1B /* PCColorCtrlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCColorCtrlView.swift; sourceTree = "<group>"; };
+		4D53A04E256C720D00764C1B /* PCToolView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCToolView.swift; sourceTree = "<group>"; };
+		4D63EC0D25BF3A3300CE5366 /* FileHandleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FileHandleExtensions.swift; path = pixcen/Helpers/FileHandleExtensions.swift; sourceTree = SOURCE_ROOT; };
+		4D63EC1125BF3A5800CE5366 /* DataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataExtensions.swift; path = pixcen/Helpers/DataExtensions.swift; sourceTree = SOURCE_ROOT; };
+		4D6BD0552607F8F70084FFF2 /* PixelCanvas.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = PixelCanvas.metal; sourceTree = "<group>"; };
+		4D6BD0592607FAE50084FFF2 /* PixelCanvasRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelCanvasRenderer.swift; sourceTree = "<group>"; };
+		4D7D04F02F7541A200F10BD2 /* pixcenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pixcenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D7D04F92F7541B300F10BD2 /* pixcenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pixcenTests.swift; sourceTree = "<group>"; };
+		4D7D04FC2F7541E900F10BD2 /* gpxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gpxTests.swift; sourceTree = "<group>"; };
+		4D7D04FE2F75425400F10BD2 /* koalaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = koalaTests.swift; sourceTree = "<group>"; };
+		4D7D05002F754A1A00F10BD2 /* formatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = formatTests.swift; sourceTree = "<group>"; };
+		4D88BD13256C8035003C4F9A /* NSImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSImageExtensions.swift; sourceTree = "<group>"; };
+		4D88BD14256C8035003C4F9A /* Concurrent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Concurrent.swift; sourceTree = "<group>"; };
+		4D88BD1B256C821C003C4F9A /* PCBitmap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCBitmap.swift; sourceTree = "<group>"; };
+		4D88BD1C256C821C003C4F9A /* PCMCBitmap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCMCBitmap.swift; sourceTree = "<group>"; };
+		4D88BD1D256C821C003C4F9A /* PCSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCSprite.swift; sourceTree = "<group>"; };
+		4D88BD1E256C821C003C4F9A /* PCSFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCSFont.swift; sourceTree = "<group>"; };
+		4D88BD1F256C821D003C4F9A /* PCMCSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCMCSprite.swift; sourceTree = "<group>"; };
+		4D88BD20256C821D003C4F9A /* PCUnrestricted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCUnrestricted.swift; sourceTree = "<group>"; };
+		4D88BD21256C821D003C4F9A /* PCMCFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCMCFont.swift; sourceTree = "<group>"; };
+		4D88BD22256C821D003C4F9A /* PCCommonFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCCommonFont.swift; sourceTree = "<group>"; };
+		4D88BD2D256C8252003C4F9A /* CellInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellInfo.swift; sourceTree = "<group>"; };
+		4D88BD2E256C8253003C4F9A /* PCImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCImage.swift; sourceTree = "<group>"; };
+		4D88BD2F256C8253003C4F9A /* SaveFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveFormat.swift; sourceTree = "<group>"; };
+		4D88BD39256C829B003C4F9A /* PCC64Interface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCC64Interface.swift; sourceTree = "<group>"; };
+		4D88BD3F256C8468003C4F9A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4D88BD44256D1A4F003C4F9A /* C64Interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C64Interface.h; sourceTree = "<group>"; };
+		4D88BD50256D1B1A003C4F9A /* C64Interface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = C64Interface.cpp; sourceTree = "<group>"; };
+		4D88BD54256D1CCF003C4F9A /* narray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = narray.h; sourceTree = "<group>"; };
+		4D88BD59256D1CE5003C4F9A /* miniz.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = miniz.c; sourceTree = "<group>"; };
+		4D88BD5E256D1D9F003C4F9A /* nmemfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nmemfile.h; sourceTree = "<group>"; };
+		4D88BD5F256D1D9F003C4F9A /* nstr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nstr.h; sourceTree = "<group>"; };
+		4D88BD60256D1D9F003C4F9A /* nstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nstream.h; sourceTree = "<group>"; };
+		4D88BD6A256D231E003C4F9A /* autoptr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autoptr.h; sourceTree = "<group>"; };
+		4D88BD6E256D2346003C4F9A /* b2wrap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = b2wrap.cpp; sourceTree = "<group>"; };
+		4D88BD6F256D2346003C4F9A /* b2wrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = b2wrap.h; sourceTree = "<group>"; };
+		4D88BD75256D2394003C4F9A /* cruncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cruncher.h; sourceTree = "<group>"; };
+		4D88BD76256D2394003C4F9A /* bb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bb.c; sourceTree = "<group>"; };
+		4D88BD78256D2394003C4F9A /* file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = file.h; sourceTree = "<group>"; };
+		4D88BD79256D2394003C4F9A /* bb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bb.h; sourceTree = "<group>"; };
+		4D88BD7A256D2394003C4F9A /* cruncher.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cruncher.c; sourceTree = "<group>"; };
+		4D88BD7B256D2394003C4F9A /* file.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = file.c; sourceTree = "<group>"; };
+		4D88BD7C256D2394003C4F9A /* Decruncher.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = Decruncher.inc; sourceTree = "<group>"; };
+		4D88BD89256D32CE003C4F9A /* CImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CImage.h; sourceTree = "<group>"; };
+		4D88BD8A256D32CE003C4F9A /* CImage.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CImage.mm; sourceTree = "<group>"; };
+		4D88BD96256D33E8003C4F9A /* ImageFast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageFast.h; sourceTree = "<group>"; };
+		4D88BD9C256D35F7003C4F9A /* threadpool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = threadpool.h; path = libpixcen/threadpool.h; sourceTree = SOURCE_ROOT; };
+		4D88BDF7256D8632003C4F9A /* MCBitmap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MCBitmap.cpp; sourceTree = "<group>"; };
+		4D88BE03256D8F4B003C4F9A /* Unrestricted.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Unrestricted.cpp; sourceTree = "<group>"; };
+		4D88BE07256D8F62003C4F9A /* Sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sprite.cpp; sourceTree = "<group>"; };
+		4D88BE0B256D8FCB003C4F9A /* Romfont.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Romfont.cpp; sourceTree = "<group>"; };
+		4D88BE0C256D8FCB003C4F9A /* Romfont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Romfont.h; sourceTree = "<group>"; };
+		4D88BE11256D91EA003C4F9A /* Bitmap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bitmap.cpp; sourceTree = "<group>"; };
+		4D88BE15256D931D003C4F9A /* Font.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Font.cpp; sourceTree = "<group>"; };
+		4DCA3F26256C5E7F00280A55 /* pixcen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pixcen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DCA3F29256C5E7F00280A55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4DCA3F2D256C5E8000280A55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DCA3F30256C5E8000280A55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4DCA3F32256C5E8000280A55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DCA3F33256C5E8000280A55 /* pixcen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pixcen.entitlements; sourceTree = "<group>"; };
+		4DE12EE825C35BCA00771357 /* C64Col.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C64Col.swift; sourceTree = "<group>"; };
+		AABB0001000000000000CC01 /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
+		AABB0003000000000000CC01 /* PCC64PalleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCC64PalleteViewController.swift; sourceTree = "<group>"; };
+		AABB0004000000000000CC01 /* PCColorCtrlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCColorCtrlViewController.swift; sourceTree = "<group>"; };
+		AABB1001000000000000CC01 /* PCPixelCanvasView+Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PCPixelCanvasView+Gestures.swift"; sourceTree = "<group>"; };
+		AABB1002000000000000CC01 /* PCPixelCanvasView+MouseEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PCPixelCanvasView+MouseEvents.swift"; sourceTree = "<group>"; };
+		AABB1003000000000000CC01 /* PCPixelCanvasView+Drawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PCPixelCanvasView+Drawing.swift"; sourceTree = "<group>"; };
+		AABB1004000000000000CC01 /* PCPixelCanvasView+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PCPixelCanvasView+Keyboard.swift"; sourceTree = "<group>"; };
+		AABB1005000000000000CC01 /* PCScrollIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCScrollIndicator.swift; sourceTree = "<group>"; };
+		AABB2001000000000000CC01 /* PCPreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCPreferencesWindowController.swift; sourceTree = "<group>"; };
+		AABB3001000000000000CC01 /* ZlibCompression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZlibCompression.swift; sourceTree = "<group>"; };
+		AABB4001000000000000CC01 /* PCByteBoozer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCByteBoozer.h; sourceTree = "<group>"; };
+		AABB4002000000000000CC01 /* PCByteBoozer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PCByteBoozer.mm; sourceTree = "<group>"; };
+		AABB4003000000000000CC01 /* ByteBoozer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByteBoozer.swift; sourceTree = "<group>"; };
+		AABB5001000000000000CC01 /* PCC64Codecs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCC64Codecs.h; sourceTree = "<group>"; };
+		AABB5002000000000000CC01 /* PCC64Codecs.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PCC64Codecs.mm; sourceTree = "<group>"; };
+		AABB5003000000000000CC01 /* C64Codecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C64Codecs.swift; sourceTree = "<group>"; };
+		AABB6001000000000000CC01 /* ImageImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageImporter.swift; sourceTree = "<group>"; };
+		AABB7001000000000000CC01 /* PCPreviewWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCPreviewWindow.swift; sourceTree = "<group>"; };
+		AAC01001000000000000CC01 /* PCRomFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCRomFont.h; sourceTree = "<group>"; };
+		AAC01002000000000000CC01 /* PCRomFont.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PCRomFont.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D539FBE256C613700764C1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D53A00E256C6BC100764C1B /* liblibpixcen.a in Frameworks */,
+				4D53A016256C6C6700764C1B /* AppKit.framework in Frameworks */,
+				4D53A012256C6C5100764C1B /* Foundation.framework in Frameworks */,
+				4D53A014256C6C6100764C1B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D539FE0256C62A000764C1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D7D04ED2F7541A200F10BD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DCA3F23256C5E7F00280A55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D539FC8256C613800764C1B /* PixcenFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D539FC2256C613800764C1B /* PixcenFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				4D539FC3256C613800764C1B /* PixcenFoundation.h */,
+				4D539FD4256C61D300764C1B /* C64Col.hpp */,
+				4D539FD6256C61D300764C1B /* C64Col.mm */,
+				4D539FD3256C61D300764C1B /* C64InterfaceLowlevel.hpp */,
+				4D539FD5256C61D300764C1B /* C64InterfaceLowlevel.mm */,
+				AABB4001000000000000CC01 /* PCByteBoozer.h */,
+				AABB4002000000000000CC01 /* PCByteBoozer.mm */,
+				AABB5001000000000000CC01 /* PCC64Codecs.h */,
+				AABB5002000000000000CC01 /* PCC64Codecs.mm */,
+				AAC01001000000000000CC01 /* PCRomFont.h */,
+				AAC01002000000000000CC01 /* PCRomFont.mm */,
+				4D539FC4256C613800764C1B /* Info.plist */,
+				4D539FDC256C61DF00764C1B /* PixcenFoundation.modulemap */,
+			);
+			path = PixcenFoundation;
+			sourceTree = "<group>";
+		};
+		4D539FE8256C634300764C1B /* libpixcen */ = {
+			isa = PBXGroup;
+			children = (
+				4D88BD5D256D1D73003C4F9A /* other */,
+				4D88BD58256D1CE5003C4F9A /* miniz */,
+				4D88BD44256D1A4F003C4F9A /* C64Interface.h */,
+				4D88BD50256D1B1A003C4F9A /* C64Interface.cpp */,
+				4D88BDF7256D8632003C4F9A /* MCBitmap.cpp */,
+				4D88BE03256D8F4B003C4F9A /* Unrestricted.cpp */,
+				4D88BE07256D8F62003C4F9A /* Sprite.cpp */,
+				4D88BE11256D91EA003C4F9A /* Bitmap.cpp */,
+				4D88BE15256D931D003C4F9A /* Font.cpp */,
+				4D539FEA256C643B00764C1B /* C64Col.cpp */,
+				4D539FE9256C643B00764C1B /* C64Col.h */,
+				4D88BE0B256D8FCB003C4F9A /* Romfont.cpp */,
+				4D88BE0C256D8FCB003C4F9A /* Romfont.h */,
+				4D539FF6256C652000764C1B /* platform.cpp */,
+				4D539FF5256C652000764C1B /* platform.h */,
+				AABB0001000000000000CC01 /* stdafx.h */,
+				4D539FF0256C64CA00764C1B /* libpixcen.h */,
+				4D539FEF256C64CA00764C1B /* libpixcen.cpp */,
+			);
+			path = libpixcen;
+			sourceTree = "<group>";
+		};
+		4D53A00D256C6BC100764C1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D53A015256C6C6700764C1B /* AppKit.framework */,
+				4D53A013256C6C6100764C1B /* Cocoa.framework */,
+				4D53A011256C6C5100764C1B /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D53A026256C6E2900764C1B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D53A030256C6F8900764C1B /* Dialogues */,
+				4D53A031256C6FCB00764C1B /* Toolbox */,
+				4D53A027256C6EAB00764C1B /* PCPixelCanvasViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4D53A02B256C6EBF00764C1B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D53A04E256C720D00764C1B /* PCToolView.swift */,
+				4D53A048256C71B200764C1B /* PCC64PaletteView.swift */,
+				4D53A049256C71B200764C1B /* PCColorCtrlView.swift */,
+				4D53A02C256C6F2000764C1B /* PCPixelCanvasView.swift */,
+				AABB1001000000000000CC01 /* PCPixelCanvasView+Gestures.swift */,
+				AABB1002000000000000CC01 /* PCPixelCanvasView+MouseEvents.swift */,
+				AABB1003000000000000CC01 /* PCPixelCanvasView+Drawing.swift */,
+				AABB1004000000000000CC01 /* PCPixelCanvasView+Keyboard.swift */,
+				AABB1005000000000000CC01 /* PCScrollIndicator.swift */,
+				AABB7001000000000000CC01 /* PCPreviewWindow.swift */,
+				4D6BD0552607F8F70084FFF2 /* PixelCanvas.metal */,
+				4D6BD0592607FAE50084FFF2 /* PixelCanvasRenderer.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D53A030256C6F8900764C1B /* Dialogues */ = {
+			isa = PBXGroup;
+			children = (
+				4D53A033256C70BC00764C1B /* PCAddressDialogViewController.swift */,
+				4D53A034256C70BC00764C1B /* PCCreateNewDialogViewController.swift */,
+				4D53A032256C70BC00764C1B /* PCRemapColourDlgViewController.swift */,
+				AABB2001000000000000CC01 /* PCPreferencesWindowController.swift */,
+			);
+			path = Dialogues;
+			sourceTree = "<group>";
+		};
+		4D53A031256C6FCB00764C1B /* Toolbox */ = {
+			isa = PBXGroup;
+			children = (
+				AABB0003000000000000CC01 /* PCC64PalleteViewController.swift */,
+				AABB0004000000000000CC01 /* PCColorCtrlViewController.swift */,
+			);
+			path = Toolbox;
+			sourceTree = "<group>";
+		};
+		4D7D04FA2F7541B300F10BD2 /* pixcenTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D7D05002F754A1A00F10BD2 /* formatTests.swift */,
+				4D7D04FE2F75425400F10BD2 /* koalaTests.swift */,
+				4D7D04FC2F7541E900F10BD2 /* gpxTests.swift */,
+				4D7D04F92F7541B300F10BD2 /* pixcenTests.swift */,
+			);
+			path = pixcenTests;
+			sourceTree = "<group>";
+		};
+		4D88BD11256C7D41003C4F9A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4D88BD14256C8035003C4F9A /* Concurrent.swift */,
+				4D88BD13256C8035003C4F9A /* NSImageExtensions.swift */,
+				4D63EC0D25BF3A3300CE5366 /* FileHandleExtensions.swift */,
+				4D63EC1125BF3A5800CE5366 /* DataExtensions.swift */,
+				AABB3001000000000000CC01 /* ZlibCompression.swift */,
+				AABB4003000000000000CC01 /* ByteBoozer.swift */,
+				AABB5003000000000000CC01 /* C64Codecs.swift */,
+				AABB6001000000000000CC01 /* ImageImporter.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4D88BD12256C7D4F003C4F9A /* C64 */ = {
+			isa = PBXGroup;
+			children = (
+				4D88BD19256C81B5003C4F9A /* Types */,
+				4D88BD39256C829B003C4F9A /* PCC64Interface.swift */,
+				4D88BD1A256C81C3003C4F9A /* Formats */,
+			);
+			path = C64;
+			sourceTree = "<group>";
+		};
+		4D88BD19256C81B5003C4F9A /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				4D88BD2D256C8252003C4F9A /* CellInfo.swift */,
+				4D88BD2E256C8253003C4F9A /* PCImage.swift */,
+				4D88BD2F256C8253003C4F9A /* SaveFormat.swift */,
+				4DE12EE825C35BCA00771357 /* C64Col.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		4D88BD1A256C81C3003C4F9A /* Formats */ = {
+			isa = PBXGroup;
+			children = (
+				4D88BD1B256C821C003C4F9A /* PCBitmap.swift */,
+				4D88BD22256C821D003C4F9A /* PCCommonFont.swift */,
+				4D88BD1C256C821C003C4F9A /* PCMCBitmap.swift */,
+				4D88BD21256C821D003C4F9A /* PCMCFont.swift */,
+				4D88BD1F256C821D003C4F9A /* PCMCSprite.swift */,
+				4D88BD1E256C821C003C4F9A /* PCSFont.swift */,
+				4D88BD1D256C821C003C4F9A /* PCSprite.swift */,
+				4D88BD20256C821D003C4F9A /* PCUnrestricted.swift */,
+			);
+			path = Formats;
+			sourceTree = "<group>";
+		};
+		4D88BD58256D1CE5003C4F9A /* miniz */ = {
+			isa = PBXGroup;
+			children = (
+				4D88BD59256D1CE5003C4F9A /* miniz.c */,
+			);
+			path = miniz;
+			sourceTree = "<group>";
+		};
+		4D88BD5D256D1D73003C4F9A /* other */ = {
+			isa = PBXGroup;
+			children = (
+				4D88BD89256D32CE003C4F9A /* CImage.h */,
+				4D88BD8A256D32CE003C4F9A /* CImage.mm */,
+				4D88BD96256D33E8003C4F9A /* ImageFast.h */,
+				4D88BD9C256D35F7003C4F9A /* threadpool.h */,
+				4D88BD6A256D231E003C4F9A /* autoptr.h */,
+				4D88BD54256D1CCF003C4F9A /* narray.h */,
+				4D88BD5F256D1D9F003C4F9A /* nstr.h */,
+				4D88BD5E256D1D9F003C4F9A /* nmemfile.h */,
+				4D88BD60256D1D9F003C4F9A /* nstream.h */,
+				4D88BD6E256D2346003C4F9A /* b2wrap.cpp */,
+				4D88BD6F256D2346003C4F9A /* b2wrap.h */,
+				4D88BD74256D2394003C4F9A /* b2 */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		4D88BD74256D2394003C4F9A /* b2 */ = {
+			isa = PBXGroup;
+			children = (
+				4D88BD75256D2394003C4F9A /* cruncher.h */,
+				4D88BD76256D2394003C4F9A /* bb.c */,
+				4D88BD78256D2394003C4F9A /* file.h */,
+				4D88BD79256D2394003C4F9A /* bb.h */,
+				4D88BD7A256D2394003C4F9A /* cruncher.c */,
+				4D88BD7B256D2394003C4F9A /* file.c */,
+				4D88BD7C256D2394003C4F9A /* Decruncher.inc */,
+			);
+			path = b2;
+			sourceTree = "<group>";
+		};
+		4DCA3F1D256C5E7E00280A55 = {
+			isa = PBXGroup;
+			children = (
+				4D88BD3F256C8468003C4F9A /* README.md */,
+				4D539FE8256C634300764C1B /* libpixcen */,
+				4D539FC2256C613800764C1B /* PixcenFoundation */,
+				4DCA3F28256C5E7F00280A55 /* pixcen */,
+				4D7D04FA2F7541B300F10BD2 /* pixcenTests */,
+				4DCA3F27256C5E7F00280A55 /* Products */,
+				4D53A00D256C6BC100764C1B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4DCA3F27256C5E7F00280A55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DCA3F26256C5E7F00280A55 /* pixcen.app */,
+				4D539FC1256C613700764C1B /* PixcenFoundation.framework */,
+				4D539FE2256C62A000764C1B /* liblibpixcen.a */,
+				4D7D04F02F7541A200F10BD2 /* pixcenTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DCA3F28256C5E7F00280A55 /* pixcen */ = {
+			isa = PBXGroup;
+			children = (
+				4D88BD12256C7D4F003C4F9A /* C64 */,
+				4D88BD11256C7D41003C4F9A /* Helpers */,
+				4D53A02B256C6EBF00764C1B /* Views */,
+				4D53A026256C6E2900764C1B /* ViewControllers */,
+				4DCA3F29256C5E7F00280A55 /* AppDelegate.swift */,
+				4D539FB9256C60F600764C1B /* AppDelegate+Menu.swift */,
+				4D539FB5256C60B800764C1B /* PixcenMainViewController.swift */,
+				4DCA3F2D256C5E8000280A55 /* Assets.xcassets */,
+				4DCA3F2F256C5E8000280A55 /* Main.storyboard */,
+				4DCA3F32256C5E8000280A55 /* Info.plist */,
+				4D53A022256C6DB900764C1B /* Credits.rtf */,
+				4DCA3F33256C5E8000280A55 /* pixcen.entitlements */,
+			);
+			path = pixcen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4D539FBC256C613700764C1B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D539FD7256C61D300764C1B /* C64InterfaceLowlevel.hpp in Headers */,
+				4D53A01D256C6D2600764C1B /* libpixcen.h in Headers */,
+				4D88BDD4256D5ECA003C4F9A /* platform.h in Headers */,
+				4D539FC5256C613800764C1B /* PixcenFoundation.h in Headers */,
+				AABB4014000000000000CC01 /* PCByteBoozer.h in Headers */,
+				AABB5014000000000000CC01 /* PCC64Codecs.h in Headers */,
+				AAC01014000000000000CC01 /* PCRomFont.h in Headers */,
+				4D88BDE6256D820E003C4F9A /* threadpool.h in Headers */,
+				4D539FD8256C61D300764C1B /* C64Col.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D539FDE256C62A000764C1B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D88BD80256D2395003C4F9A /* file.h in Headers */,
+				4D88BD55256D1CCF003C4F9A /* narray.h in Headers */,
+				4D88BD63256D1D9F003C4F9A /* nstream.h in Headers */,
+				4D88BD7D256D2395003C4F9A /* cruncher.h in Headers */,
+				4D88BE0E256D8FCB003C4F9A /* Romfont.h in Headers */,
+				4D539FF7256C652000764C1B /* platform.h in Headers */,
+				AABB0002000000000000CC01 /* stdafx.h in Headers */,
+				4D88BD81256D2395003C4F9A /* bb.h in Headers */,
+				4D539FEB256C643B00764C1B /* C64Col.h in Headers */,
+				4D88BD6B256D231E003C4F9A /* autoptr.h in Headers */,
+				4D88BD46256D1A4F003C4F9A /* C64Interface.h in Headers */,
+				4D539FF2256C64CA00764C1B /* libpixcen.h in Headers */,
+				4D88BD9D256D35F7003C4F9A /* threadpool.h in Headers */,
+				4D88BD97256D33E8003C4F9A /* ImageFast.h in Headers */,
+				4D88BD61256D1D9F003C4F9A /* nmemfile.h in Headers */,
+				4D88BD71256D2346003C4F9A /* b2wrap.h in Headers */,
+				4D88BD62256D1D9F003C4F9A /* nstr.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4D539FC0256C613700764C1B /* PixcenFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D539FCA256C613800764C1B /* Build configuration list for PBXNativeTarget "PixcenFoundation" */;
+			buildPhases = (
+				4D539FBC256C613700764C1B /* Headers */,
+				4D539FBD256C613700764C1B /* Sources */,
+				4D539FBE256C613700764C1B /* Frameworks */,
+				4D539FBF256C613700764C1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D53A00C256C6BBA00764C1B /* PBXTargetDependency */,
+			);
+			name = PixcenFoundation;
+			productName = PixcenFoundation;
+			productReference = 4D539FC1256C613700764C1B /* PixcenFoundation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4D539FE1256C62A000764C1B /* libpixcen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D539FE3256C62A000764C1B /* Build configuration list for PBXNativeTarget "libpixcen" */;
+			buildPhases = (
+				4D539FDE256C62A000764C1B /* Headers */,
+				4D539FDF256C62A000764C1B /* Sources */,
+				4D539FE0256C62A000764C1B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libpixcen;
+			productName = libpixcen;
+			productReference = 4D539FE2256C62A000764C1B /* liblibpixcen.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4D7D04EF2F7541A200F10BD2 /* pixcenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D7D04F82F7541A200F10BD2 /* Build configuration list for PBXNativeTarget "pixcenTests" */;
+			buildPhases = (
+				4D7D04EC2F7541A200F10BD2 /* Sources */,
+				4D7D04ED2F7541A200F10BD2 /* Frameworks */,
+				4D7D04EE2F7541A200F10BD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D7D04F52F7541A200F10BD2 /* PBXTargetDependency */,
+			);
+			name = pixcenTests;
+			packageProductDependencies = (
+			);
+			productName = pixcenTests;
+			productReference = 4D7D04F02F7541A200F10BD2 /* pixcenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4DCA3F25256C5E7F00280A55 /* pixcen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DCA3F36256C5E8000280A55 /* Build configuration list for PBXNativeTarget "pixcen" */;
+			buildPhases = (
+				4DCA3F22256C5E7F00280A55 /* Sources */,
+				4DCA3F23256C5E7F00280A55 /* Frameworks */,
+				4DCA3F24256C5E7F00280A55 /* Resources */,
+				4D539FCD256C613800764C1B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D539FC7256C613800764C1B /* PBXTargetDependency */,
+			);
+			name = pixcen;
+			productName = pixcen;
+			productReference = 4DCA3F26256C5E7F00280A55 /* pixcen.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DCA3F1E256C5E7F00280A55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					4D539FC0256C613700764C1B = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					4D539FE1256C62A000764C1B = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					4D7D04EF2F7541A200F10BD2 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = 4DCA3F25256C5E7F00280A55;
+					};
+					4DCA3F25256C5E7F00280A55 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 4DCA3F21256C5E7F00280A55 /* Build configuration list for PBXProject "pixcen" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DCA3F1D256C5E7E00280A55;
+			productRefGroup = 4DCA3F27256C5E7F00280A55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DCA3F25256C5E7F00280A55 /* pixcen */,
+				4D539FC0256C613700764C1B /* PixcenFoundation */,
+				4D539FE1256C62A000764C1B /* libpixcen */,
+				4D7D04EF2F7541A200F10BD2 /* pixcenTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D539FBF256C613700764C1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D7D04EE2F7541A200F10BD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DCA3F24256C5E7F00280A55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DCA3F2E256C5E8000280A55 /* Assets.xcassets in Resources */,
+				4D53A023256C6DB900764C1B /* Credits.rtf in Resources */,
+				4DCA3F31256C5E8000280A55 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D539FBD256C613700764C1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D539FDA256C61D300764C1B /* C64Col.mm in Sources */,
+				4D539FD9256C61D300764C1B /* C64InterfaceLowlevel.mm in Sources */,
+				AABB4012000000000000CC01 /* PCByteBoozer.mm in Sources */,
+				AABB5012000000000000CC01 /* PCC64Codecs.mm in Sources */,
+				AAC01012000000000000CC01 /* PCRomFont.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D539FDF256C62A000764C1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D88BE16256D931D003C4F9A /* Font.cpp in Sources */,
+				4D539FF1256C64CA00764C1B /* libpixcen.cpp in Sources */,
+				4D88BD84256D2395003C4F9A /* Decruncher.inc in Sources */,
+				4D88BDF8256D8632003C4F9A /* MCBitmap.cpp in Sources */,
+				4D88BD7E256D2395003C4F9A /* bb.c in Sources */,
+				4D88BE08256D8F62003C4F9A /* Sprite.cpp in Sources */,
+				4D539FF8256C652000764C1B /* platform.cpp in Sources */,
+				4D88BD70256D2346003C4F9A /* b2wrap.cpp in Sources */,
+				4D88BDA0256D3605003C4F9A /* CImage.mm in Sources */,
+				4D539FEC256C643B00764C1B /* C64Col.cpp in Sources */,
+				4D88BE0D256D8FCB003C4F9A /* Romfont.cpp in Sources */,
+				4D88BD82256D2395003C4F9A /* cruncher.c in Sources */,
+				4D88BE12256D91EA003C4F9A /* Bitmap.cpp in Sources */,
+				4D88BE04256D8F4B003C4F9A /* Unrestricted.cpp in Sources */,
+				4D88BD51256D1B1A003C4F9A /* C64Interface.cpp in Sources */,
+				4D88BD83256D2395003C4F9A /* file.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D7D04EC2F7541A200F10BD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D7D05012F754A1A00F10BD2 /* formatTests.swift in Sources */,
+				4D7D04FF2F75425700F10BD2 /* koalaTests.swift in Sources */,
+				4D7D04FB2F7541B300F10BD2 /* pixcenTests.swift in Sources */,
+				4D7D04FD2F7541F600F10BD2 /* gpxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DCA3F22256C5E7F00280A55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D6BD0562607F8F70084FFF2 /* PixelCanvas.metal in Sources */,
+				AABB0005000000000000CC01 /* PCC64PalleteViewController.swift in Sources */,
+				AABB0006000000000000CC01 /* PCColorCtrlViewController.swift in Sources */,
+				4D88BD28256C821D003C4F9A /* PCUnrestricted.swift in Sources */,
+				4D53A037256C70BC00764C1B /* PCCreateNewDialogViewController.swift in Sources */,
+				4D53A028256C6EAB00764C1B /* PCPixelCanvasViewController.swift in Sources */,
+				4D88BD31256C8253003C4F9A /* PCImage.swift in Sources */,
+				4D88BD15256C8035003C4F9A /* NSImageExtensions.swift in Sources */,
+				4D88BD16256C8035003C4F9A /* Concurrent.swift in Sources */,
+				4D88BD23256C821D003C4F9A /* PCBitmap.swift in Sources */,
+				4D88BD32256C8253003C4F9A /* SaveFormat.swift in Sources */,
+				4D53A04F256C720D00764C1B /* PCToolView.swift in Sources */,
+				4D6BD05A2607FAE50084FFF2 /* PixelCanvasRenderer.swift in Sources */,
+				4D539FB6256C60B800764C1B /* PixcenMainViewController.swift in Sources */,
+				4D53A02D256C6F2000764C1B /* PCPixelCanvasView.swift in Sources */,
+				AABB1011000000000000CC01 /* PCPixelCanvasView+Gestures.swift in Sources */,
+				AABB1012000000000000CC01 /* PCPixelCanvasView+MouseEvents.swift in Sources */,
+				AABB1013000000000000CC01 /* PCPixelCanvasView+Drawing.swift in Sources */,
+				AABB1014000000000000CC01 /* PCPixelCanvasView+Keyboard.swift in Sources */,
+				AABB1015000000000000CC01 /* PCScrollIndicator.swift in Sources */,
+				AABB7011000000000000CC01 /* PCPreviewWindow.swift in Sources */,
+				AABB2011000000000000CC01 /* PCPreferencesWindowController.swift in Sources */,
+				4DCA3F2A256C5E7F00280A55 /* AppDelegate.swift in Sources */,
+				4D88BD25256C821D003C4F9A /* PCSprite.swift in Sources */,
+				4D88BD29256C821D003C4F9A /* PCMCFont.swift in Sources */,
+				4D88BD5A256D1CE5003C4F9A /* miniz.c in Sources */,
+				4D539FBA256C60F600764C1B /* AppDelegate+Menu.swift in Sources */,
+				4D53A04A256C71B200764C1B /* PCC64PaletteView.swift in Sources */,
+				4D53A036256C70BC00764C1B /* PCAddressDialogViewController.swift in Sources */,
+				4D88BD2A256C821D003C4F9A /* PCCommonFont.swift in Sources */,
+				4D88BD24256C821D003C4F9A /* PCMCBitmap.swift in Sources */,
+				4D53A035256C70BC00764C1B /* PCRemapColourDlgViewController.swift in Sources */,
+				4DE12EE925C35BCA00771357 /* C64Col.swift in Sources */,
+				4D88BD27256C821D003C4F9A /* PCMCSprite.swift in Sources */,
+				4D63EC1225BF3A5800CE5366 /* DataExtensions.swift in Sources */,
+				AABB3011000000000000CC01 /* ZlibCompression.swift in Sources */,
+				AABB4013000000000000CC01 /* ByteBoozer.swift in Sources */,
+				AABB5013000000000000CC01 /* C64Codecs.swift in Sources */,
+				AABB6011000000000000CC01 /* ImageImporter.swift in Sources */,
+				4D88BD3A256C829B003C4F9A /* PCC64Interface.swift in Sources */,
+				4D88BD26256C821D003C4F9A /* PCSFont.swift in Sources */,
+				4D88BD30256C8253003C4F9A /* CellInfo.swift in Sources */,
+				4D53A04B256C71B200764C1B /* PCColorCtrlView.swift in Sources */,
+				4D63EC0E25BF3A3300CE5366 /* FileHandleExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D539FC7256C613800764C1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D539FC0256C613700764C1B /* PixcenFoundation */;
+			targetProxy = 4D539FC6256C613800764C1B /* PBXContainerItemProxy */;
+		};
+		4D53A00C256C6BBA00764C1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D539FE1256C62A000764C1B /* libpixcen */;
+			targetProxy = 4D53A00B256C6BBA00764C1B /* PBXContainerItemProxy */;
+		};
+		4D7D04F52F7541A200F10BD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DCA3F25256C5E7F00280A55 /* pixcen */;
+			targetProxy = 4D7D04F42F7541A200F10BD2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4DCA3F2F256C5E8000280A55 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DCA3F30256C5E8000280A55 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D539FCB256C613800764C1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/libpixcen",
+					"$(SRCROOT)/libpixcen/other",
+					"$(SRCROOT)/original",
+				);
+				INFOPLIST_FILE = PixcenFoundation/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = $SRCROOT/PixcenFoundation/PixcenFoundation.modulemap;
+				PRODUCT_BUNDLE_IDENTIFIER = org.trsi.PixcenFoundation;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4D539FCC256C613800764C1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/libpixcen",
+					"$(SRCROOT)/libpixcen/other",
+					"$(SRCROOT)/original",
+				);
+				INFOPLIST_FILE = PixcenFoundation/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = $SRCROOT/PixcenFoundation/PixcenFoundation.modulemap;
+				PRODUCT_BUNDLE_IDENTIFIER = org.trsi.PixcenFoundation;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4D539FE4256C62A000764C1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/libpixcen",
+					"$(SRCROOT)/libpixcen/other",
+					"$(SRCROOT)/libpixcen/other/b2",
+					"$(SRCROOT)/libpixcen/miniz",
+					"$(SRCROOT)/original",
+					"$(SRCROOT)/original/b2",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4D539FE5256C62A000764C1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/libpixcen",
+					"$(SRCROOT)/libpixcen/other",
+					"$(SRCROOT)/libpixcen/other/b2",
+					"$(SRCROOT)/libpixcen/miniz",
+					"$(SRCROOT)/original",
+					"$(SRCROOT)/original/b2",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4D7D04F62F7541A200F10BD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baltobor.pixcenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pixcen.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/pixcen";
+			};
+			name = Debug;
+		};
+		4D7D04F72F7541A200F10BD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baltobor.pixcenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pixcen.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/pixcen";
+			};
+			name = Release;
+		};
+		4DCA3F34256C5E8000280A55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4DCA3F35256C5E8000280A55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4DCA3F37256C5E8000280A55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = pixcen/pixcen.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				INFOPLIST_FILE = pixcen/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.drehwerk.pixcen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4DCA3F38256C5E8000280A55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = pixcen/pixcen.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				INFOPLIST_FILE = pixcen/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.drehwerk.pixcen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D539FCA256C613800764C1B /* Build configuration list for PBXNativeTarget "PixcenFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D539FCB256C613800764C1B /* Debug */,
+				4D539FCC256C613800764C1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D539FE3256C62A000764C1B /* Build configuration list for PBXNativeTarget "libpixcen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D539FE4256C62A000764C1B /* Debug */,
+				4D539FE5256C62A000764C1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D7D04F82F7541A200F10BD2 /* Build configuration list for PBXNativeTarget "pixcenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D7D04F62F7541A200F10BD2 /* Debug */,
+				4D7D04F72F7541A200F10BD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DCA3F21256C5E7F00280A55 /* Build configuration list for PBXProject "pixcen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DCA3F34256C5E8000280A55 /* Debug */,
+				4DCA3F35256C5E8000280A55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DCA3F36256C5E8000280A55 /* Build configuration list for PBXNativeTarget "pixcen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DCA3F37256C5E8000280A55 /* Debug */,
+				4DCA3F38256C5E8000280A55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DCA3F1E256C5E7F00280A55 /* Project object */;
+}

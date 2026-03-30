@@ -1,0 +1,6 @@
+// PixcenFoundation module map
+
+framework module PixcenFoundation {
+    umbrella header "PixcenFoundation.h"
+    export *
+}

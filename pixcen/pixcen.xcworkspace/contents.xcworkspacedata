@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "container:../../Unrestricted.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:../../@Projects/pixcen/Monomap.h">
+   </FileRef>
+   <FileRef
+      location = "group:../../@Projects/pixcen/narray.h">
+   </FileRef>
+   <FileRef
+      location = "group:../../@Projects/pixcen/NewDlg.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:../../@Projects/pixcen/NewDlg.h">
+   </FileRef>
+   <FileRef
+      location = "group:../../@Projects/pixcen/nmemfile.h">
+   </FileRef>
+   <FileRef
+      location = "group:../../@Projects/pixcen/nstr.h">
+   </FileRef>
+   <FileRef
+      location = "group:../../@Projects/pixcen/nstream.h">
+   </FileRef>
+   <FileRef
+      location = "group:../../@Projects/pixcen/Pixcen.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:../../@Projects/pixcen/Pixcen.h">
+   </FileRef>
+   <FileRef
+      location = "group:../../@Projects/pixcen/Preview.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:../../@Projects/pixcen/Preview.h">
+   </FileRef>
+   <FileRef
+      location = "group:../../@Projects/pixcen/RemapColourDlg.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:../../@Projects/pixcen/RemapColourDlg.h">
+   </FileRef>
+   <FileRef
+      location = "group:../../@Projects/pixcen/Resource.h">
+   </FileRef>
+   <FileRef
+      location = "group:../../@Projects/pixcen/Romfont.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:../../@Projects/pixcen/Romfont.h">
+   </FileRef>
+   <FileRef
+      location = "group:../../@Projects/pixcen/Sprite.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:../../@Projects/pixcen/stdafx.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:../../@Projects/pixcen/stdafx.h">
+   </FileRef>
+   <FileRef
+      location = "group:../../@Projects/pixcen/targetver.h">
+   </FileRef>
+   <FileRef
+      location = "group:../../@Projects/pixcen/threadpool.h">
+   </FileRef>
+   <FileRef
+      location = "group:../../@Projects/pixcen/ToolDialog.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:../../@Projects/pixcen/ToolDialog.h">
+   </FileRef>
+</Workspace>
