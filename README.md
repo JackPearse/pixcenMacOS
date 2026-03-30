@@ -35,3 +35,7 @@ And I had truly underestimated the project. At first glance, this pixel
 editor seems simple. But it’s a real challenge. 
 
 My respect goes to Hammarberg. 
+
+You can download a binary bundle [here](https://github.com/JackPearse/pixcenMacOS/blob/main/pixcen.zip)
+See the README.md of the download for instructions. On MacOS the bundle may appear
+broken. That is a security issue of the OS. Looke into the README on how to resolve it.
